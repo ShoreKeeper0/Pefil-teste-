@@ -1,0 +1,162 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Preto */
+    color: #fff; /* Branco */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e1e1e; /* Preto mais suave */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f00; /* Vermelho */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Branco quando passar o mouse */
+}
+
+/* Estilos para os botões no cabeçalho */
+button {
+    background-color: #f00; /* Fundo vermelho */
+    color: #fff; /* Texto branco */
+    border: none; /* Remove borda padrão */
+    padding: 10px 20px; /* Padding para aumentar a área clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudança do cursor para mãozinha */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #fff; /* Fundo branco */
+    color: #f00; /* Texto vermelho */
+    transform: scale(1.1); /* Aumenta um pouco o botão */
+}
+
+/* Efeito quando o botão está pressionado (clicado) */
+button:active {
+    transform: scale(0.98); /* Dá um efeito de "pressionado" */
+}
+
+/* Efeito de foco (quando o botão é selecionado) */
+button:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h1, section h2 {
+    color: #f00; /* Vermelho */
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #ccc; /* Cinza claro para melhorar a legibilidade */
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+}
+
+/* Imagens */
+section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Projetos */
+.projeto {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projeto h3 {
+    color: #f00; /* Vermelho */
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    color: #ccc;
+}
+
+/* Links */
+a {
+    color: #f00; /* Vermelho */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff; /* Branco ao passar o mouse */
+}
+
+/* Contato */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+}

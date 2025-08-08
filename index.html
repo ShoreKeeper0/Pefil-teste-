@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Função para mostrar apenas a seção selecionada
+        function toggleSection(sectionId) {
+            // Lista dos IDs das seções
+            const sections = ['inicio', 'sobre', 'projetos', 'contato'];
+            sections.forEach(function(id) {
+                const sec = document.getElementById(id);
+                if (sec) {
+                    sec.style.display = (id === sectionId) ? 'block' : 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="toggleSection('inicio')">Início</button></li>
+                <li><button onclick="toggleSection('sobre')">Sobre Mim</button></li>
+                <li><button onclick="toggleSection('projetos')">Projetos</button></li>
+                <li><button onclick="toggleSection('contato')">Contato</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="inicio">
+        <h1>Bem-vindo ao meu portifólio!</h1>
+        <img src="yidkml5tvu7c1_preview_rev_1.png" alt="Foto de Perfil">
+        <p>Olá, sou um programador iniciante, gosto de fazer projetos divertidos e mexer com mixers de voz as vezes, gosto de mexer com python, html e css, nada demais, planejo aprender a mexer com engines novas no futuro</p>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" style="display: none;">
+        <h2>Sobre Mim</h2>
+        <p>Sou um estudante do 3° do ensino medio do IFMT com curso técnico em informática, prefiro me manter para mim mesmo, trabalho de forma boa com equipes, e não tenho medo de aprender algo novo se necessário</p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" style="display: none;">
+        <h2>Meus Projetos</h2>
+        <div class="projeto">
+            <h3>Projeto 1 - Teto Kasane</h3>
+            <img src="teste 3_preview_rev_1.png" alt="Imagem do Projeto 1">
+            <p>Projeto que fiz por diversão apenas para testar as configurações gráficas do VS code</p>
+        </div>
+        <div class="projeto">
+            <h3>Projeto 2 - Pristina Papientia</h3>
+            <img src="rpg-rpg-maker-elves-wizard-wallpaper-thumb.jpg" alt="Imagem do Projeto 2">
+            <p>Esse projeto é um projeto em conjunto com meu grupo para criarmos um jogo divertido, com uma história rica em detalhes e educativo</p>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" style="display: none;">
+        <h2>Contato</h2>
+          <img src="mondongo.jpg" alt="contato">
+        <p>Você pode entrar em contato comigo por e-mail: <a href="mailto:seuemail@example.com">josepython2007@gmail.com</a></p>
+        <p>Ou também pelos links abaixo</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/seunome" target="_blank">https://www.linkedin.com/in/josevyctoralvesbarbosa</a></li>
+            <li><a href="https://github.com/seunome" target="_blank">https://github.com/ShoreKeeper0</a></li>
+        </ul>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 José Vyctor Alves Barbosa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
